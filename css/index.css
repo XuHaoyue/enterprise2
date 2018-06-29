@@ -1,0 +1,442 @@
+*{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+ }
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 75px;
+    background: #000;
+}
+.continue{
+    width:1220px;
+    height: 100%;
+    margin: 0 auto;
+}
+.logo{
+    display: inline-block;
+    background: url("../img/1510822936.png") no-repeat center;
+    width: 180px;
+    height: 100%;
+}
+.topR{
+    width: auto;
+    height: 100%;
+    float: right;
+    display: flex;
+}
+.topR li{
+    padding:0 25px;
+}
+.topR li a{
+    color:#c1c1c1;
+    font-size: 14px;
+    line-height: 75px;
+    transition: all 0.2s;
+}
+.topR li a:hover{
+    color:#fff;
+}
+main{
+    width: 100%;
+    height: auto;
+    background: #EDEDED;
+    padding-bottom: 30px;
+}
+nav{
+    width:1220px;
+    height: auto;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+}
+.nav>li{
+    padding:20px 20px;
+    position: relative;
+}
+.nav>li>a{
+    display: block;
+    color: #666;
+    font-size: 14px;
+    position: relative;
+}
+.bigw{
+    width:200px;
+    height: auto;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    position: absolute;
+    left:0;
+    top:70px;
+    box-shadow: 0px 20px 50px 10px #ccc;
+    z-index: 0;
+    background: #fff;
+}
+.bigw .smalll{
+    height: 50px;
+    border-radius: 5px;
+    background: #fff;
+}
+.bigw .smalll:hover{
+    background: lightslategray;
+}
+.bigw .smalll a{
+    display: block;
+    font-size: 16px;
+    color: #333;
+    line-height: 50px;
+    margin-left: 5px;
+}
+.nav>li:nth-child(3):after,.nav>li:nth-child(4):after,.nav>li:nth-child(5):after{
+    content: '';
+    position: absolute;
+    top:30px;
+    left:0;
+    width:2px;
+    height: 2px;
+    display: block;
+    border-right: 50%;
+    background:#bdbdbd;
+}
+.nav>li a:hover{
+    color: blue;
+}
+.nav>li:first-child{
+    font-weight: bold;
+}
+.banner{
+    height:500px;
+    position: relative;
+}
+.imgbox{
+    width: 1220px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.imgbox li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:1220px;
+}
+.imgbox li:first-child{
+    left:0;
+}
+.imgbox li:hover{
+    -webkit-box-shadow: 0 0 4px 2px #CCCCCC;
+    -moz-box-shadow: 0 0 4px 2px #CCCCCC;
+    box-shadow: 0 0 4px 2px #CCCCCC;
+}
+.imgbox li a{
+    display: block;
+}
+.imgbox li a img{
+    height: 500px;
+}
+.btn{
+    width:150px;
+    height: 10px;
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    bottom:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn li{
+    height: 10px;
+    width:10px;
+    background: #CCCCCC;
+    border-radius: 50%;
+}
+.btn .hot{
+    background: #fff;
+}
+.chocard{
+    width:1220px;
+    height: auto;
+    background: #fff;
+    border-radius: 8px;
+    border:1px solid #EDEDED;
+    margin:70px auto 0;
+}
+.chotop{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EDEDED;
+}
+.chotopL{
+    margin:10px 0 10px 30px;
+}
+.chotopL h3{
+    font-size:22px;
+    color: #666;
+    font-weight: 300;
+}
+.chotopL p{
+    font-size: 14px;
+    color: #666;
+    font-weight: 100;
+}
+.chotopR{
+    float: right;
+    margin-right: 10px;
+}
+.chotopR button{
+    width: 45px;
+    height: 45px;
+    margin: 10px 5px;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    background: #fafafa;
+}
+.shodown{
+    width: 100%;
+    height: 429px;
+}
+.stobox{
+    width: 305px;
+    height: 100%;
+    border-right: 1px solid #EDEDED;
+    text-align: center;
+    margin: 0 10px;
+}
+.stobox img{
+    width: 206px;
+    margin: 50px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+.btn2{
+    width: 40px;
+    height: 10px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn2 li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: gray;
+}
+.stobox h3 a{
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #424242;
+    font-weight: 300!important;
+    display: block;
+    width: 100%;
+}
+.stobox p{
+    overflow: hidden;
+    padding-top: 7px;
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #b2b2b2;
+}
+.stobox button{
+    width: 100px;
+    height: 30px;
+    margin: 5px auto 0;
+    border-radius: 4px;
+    display: none;
+    transition: all 0.2s;
+    background: #fff;
+    border: 1px solid #EDEDED;
+}
+.stobox:hover img{
+    transform:scale(1.1);
+}
+.stobox:hover button{
+    display: block;
+}
+.stobox button:hover{
+    background: rgba(0,0,0,0.1);
+}
+.stobox button a{
+    color: #333;
+    font-size:12px;
+    text-align: center;
+    line-height:30px;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: #fafafa;
+}
+.footer{
+    width: 1220px;
+    height: auto;
+    margin: 0 auto ;
+    box-sizing: border-box;
+    padding-top:50px;
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EDEDED;
+}
+.footL{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.footL li{
+    text-align: center;
+}
+.footL h3>a{
+    display: block;
+    color: #646464;
+    font-size: 14px;
+}
+.jieshao{
+    float: left;
+}
+.jieshao li{
+    height: 16px;
+    marginjieshao: 10px auto;
+}. li:hover a{
+
+     color: blue;
+ }
+.jieshao a{
+    font-size: 12px;
+    color: #969696;
+}
+.footR{
+    width: 500px;
+    height: 100px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.tele{
+    font-size: 24px;
+    color: #646464;
+    font-weight: bold;
+}
+.footR p{
+    font-size: 14px;
+    color: #969696;
+    font-weight: normal;
+}
+.footR button{
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    line-height: 20px;
+}
+.shuoming{
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+}
+.neir{
+    width: 1220px;
+    height: 50px;
+    margin: 0 auto;
+}
+.neir p{
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: #757575;
+    font-weight: 400;
+    line-height: 50px;
+}
+.laug{
+    float: right;
+    line-height: 50px;
+}
+section{
+    width:1220px;
+    height: auto;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    position: fixed;
+    top: -70px;
+    left:0;
+    right:0;
+    z-index: 30;
+}
+.navanthore{
+    display: flex;
+    margin: 0 auto;
+
+}
+.navanthore>li{
+    padding:20px 20px;
+ 
+}
+.navanthore>li:first-child{
+    padding-left: 0;
+}
+.navanthore>li>a{
+    display: block;
+    color: #666;
+    font-size: 14px;
+
+}
+.navanthore .bigw{
+    width:200px;
+    height: auto;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    position: absolute;
+    left:0;
+    top:70px;
+    box-shadow: 0px 20px 50px 10px #ccc;
+    z-index: 0;
+    background: #fff;
+    display: none;
+}
+.navanthore .bigw .smalll{
+    height: 50px;
+    border-radius: 5px;
+    background: #fff;
+}
+.navanthore .bigw .smalll:hover{
+    background: lightslategray;
+}
+.navanthore .bigw .smalll a{
+    display: block;
+    font-size: 16px;
+    color: #333;
+    line-height: 50px;
+    margin-left: 5px;
+}
+.navanthore>li:nth-child(3):after,.navanthore>li:nth-child(4):after,.navanthore>li:nth-child(5):after{
+    content: '';
+    position: absolute;
+    top:30px;
+    left:0;
+    width:2px;
+    height: 2px;
+    display: block;
+    border-right: 50%;
+    background:#bdbdbd;
+}
+.navanthore>li a:hover{
+    color: blue;
+}
